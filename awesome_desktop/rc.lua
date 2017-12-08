@@ -639,6 +639,7 @@ do
   local cmds =
   {
   	"xscreensaver -nosplash",
+  	"xmodmap -e \"keycode 75 = dead_greek dead_greek dead_greek dead_greek\"",	-- Set F9 to be the dead greek key
 	"setxkbmap -variant nodeadkeys",
   	"pgrep -u $USER -x nm-applet > /dev/null || (nm-applet &)",
     "xinput --set-prop \"pointer:ROCCAT ROCCAT Kone XTD\" \"libinput Accel Speed\" -0.94",
